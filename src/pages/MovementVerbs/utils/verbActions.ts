@@ -19,19 +19,3 @@ export const addNewVerb = async (
     throw error;
   }
 };
-
-export const handleDelete = (id: number, deleteCallback: (id: number) => void) => {
-  if (window.confirm('¿Estás seguro de que quieres eliminar este verbo?')) {
-    deleteCallback(id);
-  }
-};
-
-export const handleReset = async (resetCallback: () => Promise<void>) => {
-  if (window.confirm('¿Estás seguro de que quieres restaurar todos los verbos a sus valores originales?')) {
-    try {
-      await resetCallback();
-    } catch (error) {
-      // Error is handled in the hook
-    }
-  }
-};

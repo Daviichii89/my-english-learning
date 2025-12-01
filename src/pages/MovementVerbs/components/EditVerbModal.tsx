@@ -10,10 +10,9 @@ interface EditVerbModalProps {
   } | null;
   onClose: () => void;
   onSave: (id: number, verb: { verb: string; translation: string; example: string }) => Promise<void>;
-  onDelete: (id: number) => void;
 }
 
-export const EditVerbModal: React.FC<EditVerbModalProps> = ({ isOpen, verb, onClose, onSave, onDelete }) => {
+export const EditVerbModal: React.FC<EditVerbModalProps> = ({ isOpen, verb, onClose, onSave }) => {
   const [formData, setFormData] = useState({
     verb: '',
     translation: '',
@@ -43,13 +42,6 @@ export const EditVerbModal: React.FC<EditVerbModalProps> = ({ isOpen, verb, onCl
       // Error handled in parent
     } finally {
       setIsSaving(false);
-    }
-  };
-
-  const handleDelete = () => {
-    if (verb && window.confirm('¿Estás seguro de que quieres eliminar este verbo?')) {
-      onDelete(verb.id);
-      onClose();
     }
   };
 
@@ -134,14 +126,6 @@ export const EditVerbModal: React.FC<EditVerbModalProps> = ({ isOpen, verb, onCl
                   <span>✓</span>
                 )}
                 {isSaving ? 'Saving...' : 'Save Changes'}
-              </button>
-              <button
-                type="button"
-                onClick={handleDelete}
-                className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors flex items-center gap-2"
-              >
-                <span>🗑️</span>
-                Delete
               </button>
               <button
                 type="button"
