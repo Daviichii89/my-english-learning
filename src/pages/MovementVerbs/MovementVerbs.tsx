@@ -3,9 +3,9 @@ import { useMovementVerbs } from '../../hooks/useMovementVerbs';
 import { AddVerbModal } from './components/AddVerbModal';
 import { EditVerbModal } from './components/EditVerbModal';
 import { VerbCard } from './components/VerbCard';
-import { ActionFooter } from './components/ActionFooter';
+import { FloatingAddButton } from './components/FloatingAddButton';
 import { LearningTips } from './components/LearningTips';
-import { addNewVerb, handleReset } from './utils/verbActions';
+import { addNewVerb } from './utils/verbActions';
 
 export const MovementVerbs: React.FC = () => {
   const {
@@ -15,7 +15,6 @@ export const MovementVerbs: React.FC = () => {
     updateVerb,
     deleteVerb,
     saveChanges,
-    resetToDefault,
   } = useMovementVerbs();
   
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
@@ -57,10 +56,6 @@ export const MovementVerbs: React.FC = () => {
     }
   };
 
-  const handleResetAction = () => {
-    handleReset(resetToDefault);
-  };
-
   if (isLoading) {
     return (
       <div className="max-w-4xl mx-auto">
@@ -72,7 +67,7 @@ export const MovementVerbs: React.FC = () => {
   }
 
   return (
-    <div className="max-w-4xl mx-auto pb-24">
+    <div className="max-w-4xl mx-auto pb-8">
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-800">Movement Verbs</h1>
         <p className="text-lg text-gray-600">
@@ -92,16 +87,14 @@ export const MovementVerbs: React.FC = () => {
             key={verb.id}
             verb={verb}
             onStartEdit={handleEditVerb}
+            onDelete={handleDeleteVerb}
           />
         ))}
       </div>
       
       <LearningTips />
       
-      <ActionFooter
-        onAddNewVerb={() => setIsAddModalOpen(true)}
-        onReset={handleResetAction}
-      />
+      <FloatingAddButton onClick={() => setIsAddModalOpen(true)} />
       
       <AddVerbModal 
         isOpen={isAddModalOpen}
@@ -117,7 +110,6 @@ export const MovementVerbs: React.FC = () => {
           setVerbToEdit(null);
         }}
         onSave={handleSaveEdit}
-        onDelete={handleDeleteVerb}
       />
     </div>
   );
