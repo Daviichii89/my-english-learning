@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { useMovementVerbs } from '../../hooks/useMovementVerbs';
 import { AddVerbModal } from './components/AddVerbModal';
 import { EditVerbModal } from './components/EditVerbModal';
 import { ConfirmDeleteModal } from './components/ConfirmDeleteModal';
 import { ToastNotification } from './components/ToastNotification';
+import { SearchBar } from './components/SearchBar';
 import { VerbCard } from './components/VerbCard';
 import { FloatingAddButton } from './components/FloatingAddButton';
 import { LearningTips } from './components/LearningTips';
@@ -26,6 +27,21 @@ export const MovementVerbs: React.FC = () => {
   const [verbToDelete, setVerbToDelete] = useState<{ id: number; verb: string; } | null>(null);
   const [showToast, setShowToast] = useState(false);
   const [toastMessage, setToastMessage] = useState('');
+  const [searchTerm, setSearchTerm] = useState('');
+
+  // Filter verbs based on search term
+  const filteredVerbs = useMemo(() => {
+    if (!searchTerm.trim()) {
+      return verbs;
+    }
+    
+    const lowerSearchTerm = searchTerm.toLowerCase();
+    return verbs.filter(verb => 
+      verb.verb.toLowerCase().includes(lowerSearchTerm) ||
+      verb.translation.toLowerCase().includes(lowerSearchTerm) ||
+      verb.example.toLowerCase().includes(lowerSearchTerm)
+    );
+  }, [verbs, searchTerm]);
 
   const handleAddNewVerb = async (newVerbData: { verb: string; translation: string; example: string }) => {
     try {
@@ -131,8 +147,15 @@ export const MovementVerbs: React.FC = () => {
         </div>
       )}
       
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {verbs.map((verb) => (
+      <SearchBar
+        searchTerm={searchTerm}
+        onSearchChange={setSearchTerm}
+        resultsCount={filteredVerbs.length}
+        totalCount={verbs.length}
+      />
+      
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3\">
+        {filteredVerbs.map((verb) => (
           <VerbCard
             key={verb.id}
             verb={verb}
@@ -141,6 +164,18 @@ export const MovementVerbs: React.FC = () => {
           />
         ))}
       </div>
+      
+      {filteredVerbs.length === 0 && searchTerm && (
+        <div className="text-center py-12">
+          <p className="text-gray-500 text-lg">No verbs found matching "{searchTerm}"</p>
+          <button
+            onClick={() => setSearchTerm('')}
+            className="mt-4 text-purple-600 hover:text-purple-700 underline"
+          >
+            Clear search
+          </button>
+        </div>
+      )}
       
       <LearningTips />
       
