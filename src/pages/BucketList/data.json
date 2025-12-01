@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Travel to Japan",
+        "link": "/travel-to-japan",
+        "description": "Experience the culture, food, and technology of Japan.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkbTVKiZnXrJrrvH48IYRgQGRNS91ymuTCxw&s"
+    },
+    {
+        "title": "Buy a house",
+        "link": "/buy-a-house",
+        "description": "Find a house to call home.",
+        "image": "https://media.istockphoto.com/id/519434778/es/foto/elegante-nueva-villa-con-patio.jpg?s=612x612&w=0&k=20&c=Z8wXlUSdBSLEUtulToQ_m5uIPoqYSXMtWF6ynDHRUHw="
+    },
+    {
+        "title": "Be a father",
+        "link": "/be-a-father",
+        "description": "Joys and challenges of fatherhood.",
+        "image": "https://cdn.media.amplience.net/i/canon/get-inspired-baby-photos-hero-16x9_0ce4f439ed9d42d2aeb0d2d162c9ac32?$media-collection-full-dt-jpg$"
+    },
+    {
+        "title": "Play the maximum videogames",
+        "link": "/play-videogames",
+        "description": "Collect all the Platinum trophies",
+        "image": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/10/trofeo-platino-ps4-2110869.jpg?tf=3840x"
+    },
+    {
+        "title": "See the end of One Piece",
+        "link": "/see-end-one-piece",
+        "description": "Watch/read the conclusion of the One Piece.",
+        "image": "https://images.pluto.tv/series/62a8ce14c4eb8f001407e63d/featuredImage.jpg?fill=blur&fit=fill&fm=jpg&h=900&q=70&w=1600&auto=&ixlib=react-9.1.5"
+    }
+]

@@ -1,0 +1,868 @@
+{
+  "verbs": [
+    {
+      "id": 1,
+      "verb": "accelerate",
+      "translation": "acelerar",
+      "example": "The car accelerates on the highway."
+    },
+    {
+      "id": 2,
+      "verb": "ascend",
+      "translation": "ascender, subir",
+      "example": "The balloon ascends into the sky."
+    },
+    {
+      "id": 3,
+      "verb": "bolt",
+      "translation": "salir disparado",
+      "example": "The horse bolted when it heard the thunder."
+    },
+    {
+      "id": 4,
+      "verb": "bounce",
+      "translation": "rebotar",
+      "example": "The ball bounces on the floor."
+    },
+    {
+      "id": 5,
+      "verb": "brake",
+      "translation": "frenar",
+      "example": "I brake when I see a red light."
+    },
+    {
+      "id": 6,
+      "verb": "career",
+      "translation": "avanzar rápidamente",
+      "example": "The car careered down the hill."
+    },
+    {
+      "id": 7,
+      "verb": "catch",
+      "translation": "atrapar, coger",
+      "example": "She catches the ball with her glove."
+    },
+    {
+      "id": 8,
+      "verb": "circle",
+      "translation": "dar vueltas, rodear",
+      "example": "The plane circles the airport before landing."
+    },
+    {
+      "id": 9,
+      "verb": "clamber",
+      "translation": "trepar con dificultad",
+      "example": "We clamber over the rocks."
+    },
+    {
+      "id": 10,
+      "verb": "climb",
+      "translation": "escalar, trepar",
+      "example": "They climb the mountain every weekend."
+    },
+    {
+      "id": 11,
+      "verb": "coast",
+      "translation": "deslizarse sin esfuerzo",
+      "example": "The bike coasts down the hill."
+    },
+    {
+      "id": 12,
+      "verb": "crawl",
+      "translation": "gatear, arrastrarse",
+      "example": "The baby is learning to crawl."
+    },
+    {
+      "id": 13,
+      "verb": "creep",
+      "translation": "arrastrarse sigilosamente",
+      "example": "She creeps quietly through the house."
+    },
+    {
+      "id": 14,
+      "verb": "cruise",
+      "translation": "navegar tranquilamente",
+      "example": "We cruise along the coast."
+    },
+    {
+      "id": 15,
+      "verb": "cycle",
+      "translation": "andar en bicicleta",
+      "example": "I cycle to work every day."
+    },
+    {
+      "id": 16,
+      "verb": "dart",
+      "translation": "moverse rápidamente",
+      "example": "The fish darts between the rocks."
+    },
+    {
+      "id": 17,
+      "verb": "dash",
+      "translation": "correr rápidamente",
+      "example": "He dashes to catch the bus."
+    },
+    {
+      "id": 18,
+      "verb": "dawdle",
+      "translation": "caminar lentamente",
+      "example": "Don't dawdle or we'll be late."
+    },
+    {
+      "id": 19,
+      "verb": "descend",
+      "translation": "descender, bajar",
+      "example": "The airplane descends for landing."
+    },
+    {
+      "id": 20,
+      "verb": "dip",
+      "translation": "sumergir, zambullir",
+      "example": "She dips her toe in the water."
+    },
+    {
+      "id": 21,
+      "verb": "dive",
+      "translation": "zambullirse, bucear",
+      "example": "He dives into the pool."
+    },
+    {
+      "id": 22,
+      "verb": "drag",
+      "translation": "arrastrar",
+      "example": "She drags the heavy box."
+    },
+    {
+      "id": 23,
+      "verb": "drift",
+      "translation": "dejarse llevar",
+      "example": "The boat drifts with the current."
+    },
+    {
+      "id": 24,
+      "verb": "drive",
+      "translation": "conducir, manejar",
+      "example": "He drives to work every day."
+    },
+    {
+      "id": 25,
+      "verb": "drop",
+      "translation": "caer, dejar caer",
+      "example": "Be careful not to drop the vase."
+    },
+    {
+      "id": 26,
+      "verb": "fall",
+      "translation": "caer",
+      "example": "Leaves fall from the tree."
+    },
+    {
+      "id": 27,
+      "verb": "flee",
+      "translation": "huir",
+      "example": "The animals flee from the fire."
+    },
+    {
+      "id": 28,
+      "verb": "flick",
+      "translation": "dar un golpecito",
+      "example": "She flicks the switch to turn on the light."
+    },
+    {
+      "id": 29,
+      "verb": "fling",
+      "translation": "lanzar con fuerza",
+      "example": "He flings the ball across the field."
+    },
+    {
+      "id": 30,
+      "verb": "flit",
+      "translation": "revolotear",
+      "example": "The butterfly flits from flower to flower."
+    },
+    {
+      "id": 31,
+      "verb": "float",
+      "translation": "flotar",
+      "example": "The balloon floats in the air."
+    },
+    {
+      "id": 32,
+      "verb": "flock",
+      "translation": "congregarse",
+      "example": "Birds flock together before migration."
+    },
+    {
+      "id": 33,
+      "verb": "flounce",
+      "translation": "moverse con aire de enfado",
+      "example": "She flounces out of the room."
+    },
+    {
+      "id": 34,
+      "verb": "fly",
+      "translation": "volar",
+      "example": "Birds fly south in winter."
+    },
+    {
+      "id": 35,
+      "verb": "gallop",
+      "translation": "galopar",
+      "example": "The horse gallops across the field."
+    },
+    {
+      "id": 36,
+      "verb": "glide",
+      "translation": "deslizarse suavemente",
+      "example": "The eagle glides through the sky."
+    },
+    {
+      "id": 37,
+      "verb": "haul",
+      "translation": "tirar, arrastrar",
+      "example": "They haul the net full of fish."
+    },
+    {
+      "id": 38,
+      "verb": "hike",
+      "translation": "caminar, hacer senderismo",
+      "example": "We hike in the mountains."
+    },
+    {
+      "id": 39,
+      "verb": "hobble",
+      "translation": "cojear",
+      "example": "He hobbles after injuring his foot."
+    },
+    {
+      "id": 40,
+      "verb": "hoist",
+      "translation": "izar, levantar",
+      "example": "They hoist the flag up the pole."
+    },
+    {
+      "id": 41,
+      "verb": "hop",
+      "translation": "saltar en un pie",
+      "example": "The rabbit hops across the garden."
+    },
+    {
+      "id": 42,
+      "verb": "hurry",
+      "translation": "apresurarse",
+      "example": "We must hurry or we'll be late."
+    },
+    {
+      "id": 43,
+      "verb": "hurtle",
+      "translation": "moverse muy rápido",
+      "example": "The car hurtles down the highway."
+    },
+    {
+      "id": 44,
+      "verb": "jig",
+      "translation": "bailar alegremente",
+      "example": "They jig to the folk music."
+    },
+    {
+      "id": 45,
+      "verb": "jog",
+      "translation": "trotar",
+      "example": "I jog every morning in the park."
+    },
+    {
+      "id": 46,
+      "verb": "jump",
+      "translation": "saltar",
+      "example": "The cat can jump very high."
+    },
+    {
+      "id": 47,
+      "verb": "launch",
+      "translation": "lanzar",
+      "example": "They launch the rocket into space."
+    },
+    {
+      "id": 48,
+      "verb": "leap",
+      "translation": "saltar (gran distancia)",
+      "example": "The frog leaps from rock to rock."
+    },
+    {
+      "id": 49,
+      "verb": "levitate",
+      "translation": "levitar",
+      "example": "The magician appears to levitate."
+    },
+    {
+      "id": 50,
+      "verb": "limp",
+      "translation": "cojear",
+      "example": "He limps because of his injured leg."
+    },
+    {
+      "id": 51,
+      "verb": "lob",
+      "translation": "lanzar en arco",
+      "example": "She lobs the tennis ball over the net."
+    },
+    {
+      "id": 52,
+      "verb": "lounge",
+      "translation": "recostarse",
+      "example": "We lounge by the pool all afternoon."
+    },
+    {
+      "id": 53,
+      "verb": "lurch",
+      "translation": "tambalearse",
+      "example": "The ship lurches in the rough sea."
+    },
+    {
+      "id": 54,
+      "verb": "march",
+      "translation": "marchar",
+      "example": "Soldiers march in formation."
+    },
+    {
+      "id": 55,
+      "verb": "meander",
+      "translation": "serpentear, vagar",
+      "example": "The river meanders through the valley."
+    },
+    {
+      "id": 56,
+      "verb": "navigate",
+      "translation": "navegar",
+      "example": "Ships navigate using GPS."
+    },
+    {
+      "id": 57,
+      "verb": "paddle",
+      "translation": "remar",
+      "example": "We paddle the canoe down the river."
+    },
+    {
+      "id": 58,
+      "verb": "parade",
+      "translation": "desfilar",
+      "example": "The band parades down the street."
+    },
+    {
+      "id": 59,
+      "verb": "pedal",
+      "translation": "pedalear",
+      "example": "She pedals her bike to school."
+    },
+    {
+      "id": 60,
+      "verb": "pitch",
+      "translation": "lanzar (pelota)",
+      "example": "He pitches the ball to the batter."
+    },
+    {
+      "id": 61,
+      "verb": "pivot",
+      "translation": "girar sobre un punto",
+      "example": "The dancer pivots on one foot."
+    },
+    {
+      "id": 62,
+      "verb": "plod",
+      "translation": "caminar pesadamente",
+      "example": "The horse plods slowly up the hill."
+    },
+    {
+      "id": 63,
+      "verb": "plummet",
+      "translation": "caer en picado",
+      "example": "The plane plummets toward the ground."
+    },
+    {
+      "id": 64,
+      "verb": "plunge",
+      "translation": "sumergirse bruscamente",
+      "example": "She plunges into the cold water."
+    },
+    {
+      "id": 65,
+      "verb": "pounce",
+      "translation": "saltar sobre",
+      "example": "The cat pounces on the mouse."
+    },
+    {
+      "id": 66,
+      "verb": "prance",
+      "translation": "brincar, caracolear",
+      "example": "The horse prances in the field."
+    },
+    {
+      "id": 67,
+      "verb": "prowl",
+      "translation": "rondar",
+      "example": "The tiger prowls through the jungle."
+    },
+    {
+      "id": 68,
+      "verb": "pull",
+      "translation": "tirar, jalar",
+      "example": "Pull the rope to ring the bell."
+    },
+    {
+      "id": 69,
+      "verb": "push",
+      "translation": "empujar",
+      "example": "Push the door to open it."
+    },
+    {
+      "id": 70,
+      "verb": "quiver",
+      "translation": "temblar",
+      "example": "Her voice quivers with emotion."
+    },
+    {
+      "id": 71,
+      "verb": "ride",
+      "translation": "montar",
+      "example": "She rides her bike to school."
+    },
+    {
+      "id": 72,
+      "verb": "rise",
+      "translation": "levantarse, subir",
+      "example": "The sun rises in the east."
+    },
+    {
+      "id": 73,
+      "verb": "roam",
+      "translation": "vagar, deambular",
+      "example": "Wild animals roam the savanna."
+    },
+    {
+      "id": 74,
+      "verb": "roll",
+      "translation": "rodar",
+      "example": "The ball rolls down the hill."
+    },
+    {
+      "id": 75,
+      "verb": "row",
+      "translation": "remar",
+      "example": "They row across the lake."
+    },
+    {
+      "id": 76,
+      "verb": "run",
+      "translation": "correr",
+      "example": "She runs in the park every morning."
+    },
+    {
+      "id": 77,
+      "verb": "rush",
+      "translation": "apresurarse",
+      "example": "We rush to catch the train."
+    },
+    {
+      "id": 78,
+      "verb": "sail",
+      "translation": "navegar",
+      "example": "We sail across the ocean."
+    },
+    {
+      "id": 79,
+      "verb": "sashay",
+      "translation": "caminar con gracia",
+      "example": "She sashays down the runway."
+    },
+    {
+      "id": 80,
+      "verb": "saunter",
+      "translation": "pasear tranquilamente",
+      "example": "He saunters through the park."
+    },
+    {
+      "id": 81,
+      "verb": "scale",
+      "translation": "escalar",
+      "example": "They scale the mountain wall."
+    },
+    {
+      "id": 82,
+      "verb": "scamper",
+      "translation": "corretear",
+      "example": "Squirrels scamper up the tree."
+    },
+    {
+      "id": 83,
+      "verb": "scramble",
+      "translation": "trepar con dificultad",
+      "example": "We scramble over the rocks."
+    },
+    {
+      "id": 84,
+      "verb": "scoot",
+      "translation": "moverse rápidamente",
+      "example": "The child scoots on his scooter."
+    },
+    {
+      "id": 85,
+      "verb": "scuttle",
+      "translation": "correr rápidamente",
+      "example": "The crab scuttles across the sand."
+    },
+    {
+      "id": 86,
+      "verb": "scurry",
+      "translation": "correr apresuradamente",
+      "example": "Mice scurry across the floor."
+    },
+    {
+      "id": 87,
+      "verb": "shimmy",
+      "translation": "vibrar, moverse ondulando",
+      "example": "She shimmies across the dance floor."
+    },
+    {
+      "id": 88,
+      "verb": "shuffle",
+      "translation": "arrastrar los pies",
+      "example": "He shuffles down the hallway."
+    },
+    {
+      "id": 89,
+      "verb": "sidle",
+      "translation": "moverse de lado",
+      "example": "She sidles up to the bar."
+    },
+    {
+      "id": 90,
+      "verb": "skate",
+      "translation": "patinar",
+      "example": "Children skate on the ice."
+    },
+    {
+      "id": 91,
+      "verb": "skid",
+      "translation": "derrapar",
+      "example": "The car skids on the wet road."
+    },
+    {
+      "id": 92,
+      "verb": "skim",
+      "translation": "deslizarse sobre la superficie",
+      "example": "The stone skims across the water."
+    },
+    {
+      "id": 93,
+      "verb": "skip",
+      "translation": "saltar (saltitos), brincar",
+      "example": "The children skip rope in the playground."
+    },
+    {
+      "id": 94,
+      "verb": "skitter",
+      "translation": "moverse nerviosamente",
+      "example": "Leaves skitter across the pavement."
+    },
+    {
+      "id": 95,
+      "verb": "slalom",
+      "translation": "zigzaguear",
+      "example": "The skier slaloms down the mountain."
+    },
+    {
+      "id": 96,
+      "verb": "slide",
+      "translation": "deslizarse",
+      "example": "Children slide down the playground slide."
+    },
+    {
+      "id": 97,
+      "verb": "slink",
+      "translation": "moverse sigilosamente",
+      "example": "The cat slinks through the shadows."
+    },
+    {
+      "id": 98,
+      "verb": "slip",
+      "translation": "resbalar",
+      "example": "Be careful not to slip on the ice."
+    },
+    {
+      "id": 99,
+      "verb": "slither",
+      "translation": "deslizarse (como serpiente)",
+      "example": "The snake slithers through the grass."
+    },
+    {
+      "id": 100,
+      "verb": "sneak",
+      "translation": "moverse furtivamente",
+      "example": "He sneaks out of the house quietly."
+    },
+    {
+      "id": 101,
+      "verb": "soar",
+      "translation": "elevarse, volar alto",
+      "example": "The eagle soars above the mountains."
+    },
+    {
+      "id": 102,
+      "verb": "somersault",
+      "translation": "dar volteretas",
+      "example": "The gymnast somersaults across the mat."
+    },
+    {
+      "id": 103,
+      "verb": "spin",
+      "translation": "girar",
+      "example": "The top spins on the table."
+    },
+    {
+      "id": 104,
+      "verb": "spring",
+      "translation": "saltar, brincar",
+      "example": "The cat springs onto the fence."
+    },
+    {
+      "id": 105,
+      "verb": "sprint",
+      "translation": "correr a toda velocidad",
+      "example": "Athletes sprint to the finish line."
+    },
+    {
+      "id": 106,
+      "verb": "squirm",
+      "translation": "retorcerse",
+      "example": "The worm squirms in the dirt."
+    },
+    {
+      "id": 107,
+      "verb": "stagger",
+      "translation": "tambalearse",
+      "example": "He staggers after drinking too much."
+    },
+    {
+      "id": 108,
+      "verb": "steer",
+      "translation": "dirigir, maniobrar",
+      "example": "She steers the boat toward shore."
+    },
+    {
+      "id": 109,
+      "verb": "stride",
+      "translation": "caminar a zancadas",
+      "example": "He strides confidently into the room."
+    },
+    {
+      "id": 110,
+      "verb": "stroll",
+      "translation": "pasear",
+      "example": "We stroll through the garden."
+    },
+    {
+      "id": 111,
+      "verb": "strut",
+      "translation": "caminar pavoneándose",
+      "example": "The peacock struts around the yard."
+    },
+    {
+      "id": 112,
+      "verb": "stumble",
+      "translation": "tropezar",
+      "example": "He stumbles over the rock."
+    },
+    {
+      "id": 113,
+      "verb": "sway",
+      "translation": "balancearse",
+      "example": "The trees sway in the wind."
+    },
+    {
+      "id": 114,
+      "verb": "swarm",
+      "translation": "enjambrar",
+      "example": "Bees swarm around the hive."
+    },
+    {
+      "id": 115,
+      "verb": "swerve",
+      "translation": "desviarse bruscamente",
+      "example": "The car swerves to avoid the dog."
+    },
+    {
+      "id": 116,
+      "verb": "swim",
+      "translation": "nadar",
+      "example": "We swim in the pool during summer."
+    },
+    {
+      "id": 117,
+      "verb": "swivel",
+      "translation": "girar sobre un eje",
+      "example": "The chair swivels 360 degrees."
+    },
+    {
+      "id": 118,
+      "verb": "swoop",
+      "translation": "lanzarse en picado",
+      "example": "The hawk swoops down on its prey."
+    },
+    {
+      "id": 119,
+      "verb": "throw",
+      "translation": "lanzar, tirar",
+      "example": "He throws the ball to his friend."
+    },
+    {
+      "id": 120,
+      "verb": "toddle",
+      "translation": "caminar como un niño pequeño",
+      "example": "The toddler toddles around the room."
+    },
+    {
+      "id": 121,
+      "verb": "toss",
+      "translation": "lanzar suavemente",
+      "example": "She tosses the salad before serving."
+    },
+    {
+      "id": 122,
+      "verb": "traipse",
+      "translation": "caminar penosamente",
+      "example": "We traipse through the muddy field."
+    },
+    {
+      "id": 123,
+      "verb": "trample",
+      "translation": "pisotear",
+      "example": "Don't trample on the flowers."
+    },
+    {
+      "id": 124,
+      "verb": "tread",
+      "translation": "pisar",
+      "example": "Tread carefully on the ice."
+    },
+    {
+      "id": 125,
+      "verb": "trek",
+      "translation": "hacer una caminata larga",
+      "example": "We trek through the mountains."
+    },
+    {
+      "id": 126,
+      "verb": "tremble",
+      "translation": "temblar",
+      "example": "Her hands tremble with cold."
+    },
+    {
+      "id": 127,
+      "verb": "trot",
+      "translation": "trotar",
+      "example": "The horse trots around the ring."
+    },
+    {
+      "id": 128,
+      "verb": "trudge",
+      "translation": "caminar pesadamente",
+      "example": "They trudge through the snow."
+    },
+    {
+      "id": 129,
+      "verb": "tug",
+      "translation": "tirar con fuerza",
+      "example": "The child tugs on his mother's sleeve."
+    },
+    {
+      "id": 130,
+      "verb": "tumble",
+      "translation": "caer dando vueltas",
+      "example": "The acrobat tumbles across the stage."
+    },
+    {
+      "id": 131,
+      "verb": "twirl",
+      "translation": "girar rápidamente",
+      "example": "The dancer twirls on stage."
+    },
+    {
+      "id": 132,
+      "verb": "twist",
+      "translation": "torcer, girar",
+      "example": "She twists the cap off the bottle."
+    },
+    {
+      "id": 133,
+      "verb": "twitch",
+      "translation": "tener espasmos",
+      "example": "His eye twitches when he's nervous."
+    },
+    {
+      "id": 134,
+      "verb": "vault",
+      "translation": "saltar con pértiga",
+      "example": "The athlete vaults over the bar."
+    },
+    {
+      "id": 135,
+      "verb": "veer",
+      "translation": "cambiar de dirección",
+      "example": "The road veers to the left."
+    },
+    {
+      "id": 136,
+      "verb": "waddle",
+      "translation": "caminar como un pato",
+      "example": "The penguin waddles on the ice."
+    },
+    {
+      "id": 137,
+      "verb": "wade",
+      "translation": "caminar por el agua",
+      "example": "We wade through the shallow river."
+    },
+    {
+      "id": 138,
+      "verb": "waggle",
+      "translation": "menear",
+      "example": "The dog waggles its tail."
+    },
+    {
+      "id": 139,
+      "verb": "walk",
+      "translation": "caminar",
+      "example": "I walk to work every day."
+    },
+    {
+      "id": 140,
+      "verb": "weave",
+      "translation": "zigzaguear",
+      "example": "The car weaves through traffic."
+    },
+    {
+      "id": 141,
+      "verb": "whirl",
+      "translation": "girar rápidamente",
+      "example": "The leaves whirl in the wind."
+    },
+    {
+      "id": 142,
+      "verb": "wriggle",
+      "translation": "retorcerse",
+      "example": "The fish wriggles in the net."
+    },
+    {
+      "id": 143,
+      "verb": "wobble",
+      "translation": "tambalearse",
+      "example": "The table wobbles on uneven legs."
+    },
+    {
+      "id": 144,
+      "verb": "zigzag",
+      "translation": "zigzaguear",
+      "example": "The path zigzags up the mountain."
+    }
+  ]
+}
