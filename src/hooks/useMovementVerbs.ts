@@ -6,7 +6,7 @@ interface UseMovementVerbsReturn {
   isLoading: boolean;
   error: string | null;
   updateVerb: (id: number, updates: Partial<Omit<Verb, 'id'>>) => void;
-  deleteVerb: (id: number) => void;
+  deleteVerb: (id: number) => Promise<void>;
   saveChanges: () => Promise<void>;
 }
 
@@ -41,8 +41,16 @@ export const useMovementVerbs = (): UseMovementVerbsReturn => {
     );
   };
 
-  const deleteVerb = (id: number) => {
-    setVerbs(prevVerbs => prevVerbs.filter(verb => verb.id !== id));
+  const deleteVerb = async (id: number): Promise<void> => {
+    try {
+      setError(null);
+      const updatedVerbs = verbs.filter(verb => verb.id !== id);
+      setVerbs(updatedVerbs);
+      saveVerbs(updatedVerbs);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to delete verb');
+      throw err;
+    }
   };
 
   const saveChanges = async (): Promise<void> => {

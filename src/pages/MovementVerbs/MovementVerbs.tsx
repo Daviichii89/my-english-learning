@@ -68,9 +68,9 @@ export const MovementVerbs: React.FC = () => {
   const confirmDelete = async () => {
     if (verbToDelete) {
       const deletedVerbName = verbToDelete.verb;
-      deleteVerb(verbToDelete.id);
       try {
-        await saveChanges();
+        // deleteVerb now saves automatically
+        await deleteVerb(verbToDelete.id);
         setIsDeleteModalOpen(false);
         setVerbToDelete(null);
         setIsEditModalOpen(false);
@@ -81,6 +81,8 @@ export const MovementVerbs: React.FC = () => {
         setShowToast(true);
       } catch (error) {
         // Error handled in hook
+        setToastMessage('Failed to delete verb');
+        setShowToast(true);
       }
     }
   };
