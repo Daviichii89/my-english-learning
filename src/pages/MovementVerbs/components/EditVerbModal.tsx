@@ -30,9 +30,16 @@ export const EditVerbModal: React.FC<EditVerbModalProps> = ({ isOpen, verb, onCl
     }
   }, [verb]);
 
+  // Check if form has changes
+  const hasChanges = verb && (
+    formData.verb !== verb.verb ||
+    formData.translation !== verb.translation ||
+    formData.example !== verb.example
+  );
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.verb.trim() || !verb) return;
+    if (!formData.verb.trim() || !verb || !hasChanges) return;
     
     setIsSaving(true);
     try {
@@ -117,7 +124,7 @@ export const EditVerbModal: React.FC<EditVerbModalProps> = ({ isOpen, verb, onCl
             <div className="flex gap-3 pt-4">
               <button
                 type="submit"
-                disabled={!formData.verb.trim() || isSaving}
+                disabled={!formData.verb.trim() || isSaving || !hasChanges}
                 className="flex-1 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center justify-center gap-2"
               >
                 {isSaving ? (
