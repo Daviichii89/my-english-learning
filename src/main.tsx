@@ -6,6 +6,7 @@ import { Header } from './components/Header.tsx'
 import { HomePage } from './pages/HomePage/HomePage.tsx'
 import { BucketList } from './pages/BucketList/BucketList.tsx'
 import { Footer } from './components/Footer.tsx'
+import { ScrollToTopButton } from './components/ScrollToTopButton.tsx'
 
 import './index.css'
 import { NotFound } from './pages/NotFound/NotFound.tsx'
@@ -37,6 +38,7 @@ createRoot(document.getElementById('root')!).render(
         </Routes>
       </main>
       <Footer />
+      <ScrollToTopButton />
     </BrowserRouter>
   </StrictMode>,
 )
