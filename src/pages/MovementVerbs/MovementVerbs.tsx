@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useMovementVerbs } from '../../hooks/useMovementVerbs';
 import { AddVerbModal } from './components/AddVerbModal';
 import { EditVerbModal } from './components/EditVerbModal';
+import { ConfirmDeleteModal } from './components/ConfirmDeleteModal';
+import { ToastNotification } from './components/ToastNotification';
 import { VerbCard } from './components/VerbCard';
 import { FloatingAddButton } from './components/FloatingAddButton';
 import { LearningTips } from './components/LearningTips';
@@ -20,9 +22,14 @@ export const MovementVerbs: React.FC = () => {
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   const [verbToEdit, setVerbToEdit] = useState<{ id: number; verb: string; translation: string; example: string; } | null>(null);
+  const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
+  const [verbToDelete, setVerbToDelete] = useState<{ id: number; verb: string; } | null>(null);
+  const [showToast, setShowToast] = useState(false);
+  const [toastMessage, setToastMessage] = useState('');
 
   const handleAddNewVerb = async (newVerbData: { verb: string; translation: string; example: string }) => {
     await addNewVerb(verbs, newVerbData);
+    // Note: Page will reload, so toast won't show. This is expected.
   };
 
   const handleEditVerb = (id: number) => {
@@ -34,11 +41,16 @@ export const MovementVerbs: React.FC = () => {
   };
 
   const handleSaveEdit = async (id: number, verbData: { verb: string; translation: string; example: string }) => {
+    const verbName = verbData.verb;
     updateVerb(id, verbData);
     try {
       await saveChanges();
       setIsEditModalOpen(false);
       setVerbToEdit(null);
+      
+      // Show success toast
+      setToastMessage(`Verb "${verbName}" updated successfully`);
+      setShowToast(true);
     } catch (error) {
       // Error handled in hook
       throw error;
@@ -46,13 +58,30 @@ export const MovementVerbs: React.FC = () => {
   };
 
   const handleDeleteVerb = async (id: number) => {
-    deleteVerb(id);
-    try {
-      await saveChanges();
-      setIsEditModalOpen(false);
-      setVerbToEdit(null);
-    } catch (error) {
-      // Error handled in hook
+    const verb = verbs.find(v => v.id === id);
+    if (verb) {
+      setVerbToDelete({ id: verb.id, verb: verb.verb });
+      setIsDeleteModalOpen(true);
+    }
+  };
+
+  const confirmDelete = async () => {
+    if (verbToDelete) {
+      const deletedVerbName = verbToDelete.verb;
+      deleteVerb(verbToDelete.id);
+      try {
+        await saveChanges();
+        setIsDeleteModalOpen(false);
+        setVerbToDelete(null);
+        setIsEditModalOpen(false);
+        setVerbToEdit(null);
+        
+        // Show success toast
+        setToastMessage(`Verb "${deletedVerbName}" deleted successfully`);
+        setShowToast(true);
+      } catch (error) {
+        // Error handled in hook
+      }
     }
   };
 
@@ -110,6 +139,23 @@ export const MovementVerbs: React.FC = () => {
           setVerbToEdit(null);
         }}
         onSave={handleSaveEdit}
+      />
+      
+      <ConfirmDeleteModal
+        isOpen={isDeleteModalOpen}
+        verbName={verbToDelete?.verb || ''}
+        onConfirm={confirmDelete}
+        onCancel={() => {
+          setIsDeleteModalOpen(false);
+          setVerbToDelete(null);
+        }}
+      />
+      
+      <ToastNotification
+        isVisible={showToast}
+        message={toastMessage}
+        type="success"
+        onClose={() => setShowToast(false)}
       />
     </div>
   );
