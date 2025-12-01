@@ -7,7 +7,6 @@ import { ToastNotification } from './components/ToastNotification';
 import { VerbCard } from './components/VerbCard';
 import { FloatingAddButton } from './components/FloatingAddButton';
 import { LearningTips } from './components/LearningTips';
-import { addNewVerb } from './utils/verbActions';
 
 export const MovementVerbs: React.FC = () => {
   const {
@@ -15,6 +14,7 @@ export const MovementVerbs: React.FC = () => {
     isLoading,
     error,
     updateVerb,
+    addVerb,
     deleteVerb,
     saveChanges,
   } = useMovementVerbs();
@@ -28,8 +28,27 @@ export const MovementVerbs: React.FC = () => {
   const [toastMessage, setToastMessage] = useState('');
 
   const handleAddNewVerb = async (newVerbData: { verb: string; translation: string; example: string }) => {
-    await addNewVerb(verbs, newVerbData);
-    // Note: Page will reload, so toast won't show. This is expected.
+    try {
+      const newId = await addVerb(newVerbData);
+      
+      // Show success toast
+      setToastMessage(`Verb "${newVerbData.verb}" added successfully`);
+      setShowToast(true);
+      
+      // Wait for re-render and scroll to the new verb
+      setTimeout(() => {
+        const element = document.querySelector(`[data-verb-id="${newId}"]`);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          // Add highlight effect
+          element.classList.add('highlight-new');
+          setTimeout(() => element.classList.remove('highlight-new'), 2000);
+        }
+      }, 100);
+    } catch (error) {
+      setToastMessage('Failed to add verb');
+      setShowToast(true);
+    }
   };
 
   const handleEditVerb = (id: number) => {

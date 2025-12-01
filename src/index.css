@@ -15,4 +15,19 @@
   .animate-slide-in {
     animation: slide-in 0.3s ease-out;
   }
+  
+  @keyframes highlight-pulse {
+    0%, 100% {
+      background-color: white;
+      box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+    }
+    50% {
+      background-color: rgb(243 232 255);
+      box-shadow: 0 0 0 4px rgb(168 85 247 / 0.4);
+    }
+  }
+  
+  .highlight-new {
+    animation: highlight-pulse 1s ease-in-out 2;
+  }
 }

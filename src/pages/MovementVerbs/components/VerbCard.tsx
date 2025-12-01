@@ -19,7 +19,10 @@ export const VerbCard: React.FC<VerbCardProps> = ({
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow relative">
+    <div 
+      className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow relative"
+      data-verb-id={verb.id}
+    >
       {/* Menu button - always visible on mobile, subtle on desktop */}
       <div className="absolute top-2 right-2">
         <button
